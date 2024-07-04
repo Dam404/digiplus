@@ -7,97 +7,30 @@ body {
     line-height: 2rem;
     font-family: 'inter', sans-serif;
 }
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: white;
-    padding: 10px;
-}
-
-nav .menu {
-    display: flex;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-}
-
-.menu-icon {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-h2 {
-    text-align: center;
-}
-
-.handleClick {
-    background: greenyellow;
-    border: none;
-    border-radius: 10px;
-    width: 120px;
-    height: 40px;
-    cursor: pointer;
-}
-
-.avatar-container {
+.login{
     display: flex;
     justify-content: center;
+    margin-top: 5%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: white;
+    width: 27%;
     align-items: center;
-
+    padding: 2%;
+    border-radius: 10px
 }
-#avatar{
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
+h2{
+    display: flex;
+    align-items: center;
 }
-.handleClick:hover {
-    background: #d03e3e;
-
+input{
+    width: 80%;
+     height: 35px;
 }
-
-@media (max-width: 768px) {
-    nav .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-    }
-
-    nav ul li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    .menu-icon {
-        display: block;
-    }
-
-    #menu-toggle:checked + .menu-icon + .menu {
-        display: table-row;
-    }
-
-    .handleClick {
-        margin-left: 0;
-        margin-top: 10px;
-    }
+.button{
+    width: 80%;
+    height: 35px;
 }
